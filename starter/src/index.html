@@ -7,5 +7,28 @@
   </head>
   <body>
     <script src="index.js"></script>
+
+    <form oninput="sum.value=parseInt(field_1.value)+parseInt(field_2.value)+parseInt(field_3.value)+parseInt(field_4.value);
+    diameter.value=(parseInt(field_1.value)+parseInt(field_2.value)+parseInt(field_3.value)+parseInt(field_4.value))/4;
+    ">
+     
+      <input type="text" id="field_1" name="field_1"/>
+      <br>
+      <br>
+      <input type="text" id="field_2" name="field_2"/>
+      <br>
+      <br>
+      <input type="text" id="field_3" name="field_3"/>
+      <br>
+      <br>
+      <input type="text" id="field_4" name="field_4"/>
+      <p>Suma <output name="sum" for="field_1 field_2 field_3 field_4">0</output></p>
+      <p>Średnica <output name="diameter" for="field_1 field_2 field_3 field_4">0</output></p>
+      </form>
+
+   
+    
+    
+
   </body>
 </html>
